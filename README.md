@@ -57,10 +57,11 @@ Menu Items:
 
 ## Customization
 
-***Temperature***: You can adjust the creativity of the model by modifying the temperature setting in the OpenAI instance (0.0 is deterministic, 1.0 is more creative).
+***Temperature***: You can adjust the model's creativity by modifying the temperature setting in the OpenAI instance (0.0 is deterministic, 1.0 is more creative).
 ***Cuisines***: You can input different cuisines like "Italian", "Chinese", or any other cuisine to generate unique restaurant names and menus.
 
 ## Troubleshooting
 
-Missing API Key: Ensure that you have a valid OPENAI_API_KEY in the .env file.
+Missing API Key: Ensure you have a valid OPENAI_API_KEY in the .env file.
 Dependencies: If any libraries are missing, use pip install -r requirements.txt to install all dependencies.
+![Screenshot from 2024-11-20 00-03-44](https://github.com/user-attachments/assets/3f2a580a-38a2-4c8e-839b-6f484ad00f03)
