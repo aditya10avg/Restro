@@ -15,7 +15,8 @@ Before running the project, ensure you have the following dependencies installed
 ```bash
 pip install openai langchain python-dotenv langchain-community
 ```
-**Setup Instructions**
+
+### Setup Instructions
 Create a .env File
 
 In the root directory of the project, create a .env file and add your OpenAI API key in this format:
@@ -35,9 +36,10 @@ python generate_restaurant.py
 ```
 The function generate_name_menu(cuisine) generates a fancy restaurant name and menu based on the provided cuisine argument. The result is displayed in the console.
 
-Code Explanation
-LangChain Setup: This project uses LangChain, a powerful framework for working with language models. The script defines two chains:
 
+### Code Explanation
+
+LangChain Setup: This project uses LangChain, a powerful framework for working with language models. The script defines two chains:
 Name Generation Chain: Takes the cuisine as input and generates a fancy restaurant name.
 Menu Generation Chain: Based on the restaurant name, it generates a list of menu items.
 SequentialChain: The output of the name chain is passed into the menu chain, creating a sequential flow.
@@ -51,12 +53,12 @@ Menu Items:
 - Butter Chicken, Biryani, Samosa, Naan, Tandoori Chicken
 ```
 
-**Customization**
+### Customization
 
 Temperature: You can adjust the creativity of the model by modifying the temperature setting in the OpenAI instance (0.0 is deterministic, 1.0 is more creative).
 Cuisines: You can input different cuisines like "Italian", "Chinese", or any other cuisine to generate unique restaurant names and menus.
 
-**Troubleshooting**
+### Troubleshooting
 
 Missing API Key: Ensure that you have a valid OPENAI_API_KEY in the .env file.
 Dependencies: If any libraries are missing, use pip install -r requirements.txt to install all dependencies.
