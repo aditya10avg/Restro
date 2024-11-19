@@ -30,10 +30,10 @@ Run the Script
 
 You can run the Python script directly from the terminal. For example, to generate a restaurant name and menu items for "Indian" cuisine:
 
-bash
-Copy code
+```bash
 python generate_restaurant.py
-The function generate_name_menu(cuisine) will generate a fancy restaurant name and a menu based on the provided cuisine argument. The result will be displayed in the console.
+```
+The function generate_name_menu(cuisine) generates a fancy restaurant name and menu based on the provided cuisine argument. The result is displayed in the console.
 
 Code Explanation
 LangChain Setup: This project uses LangChain, a powerful framework for working with language models. The script defines two chains:
@@ -45,15 +45,18 @@ OpenAI: This code interacts with OpenAI's GPT model using the langchain_openai p
 
 Example Output
 For a cuisine input like "Indian", the output might look like this:
-
-mathematica
-Copy code
+``` bash
 Restaurant Name: The Royal Curry House
 Menu Items:
 - Butter Chicken, Biryani, Samosa, Naan, Tandoori Chicken
-Customization
+```
+
+**Customization**
+
 Temperature: You can adjust the creativity of the model by modifying the temperature setting in the OpenAI instance (0.0 is deterministic, 1.0 is more creative).
 Cuisines: You can input different cuisines like "Italian", "Chinese", or any other cuisine to generate unique restaurant names and menus.
-Troubleshooting
+
+**Troubleshooting**
+
 Missing API Key: Ensure that you have a valid OPENAI_API_KEY in the .env file.
 Dependencies: If any libraries are missing, use pip install -r requirements.txt to install all dependencies.
